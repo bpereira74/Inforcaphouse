@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :contacts, only: %i[new create]
       get '/home',    to: 'pages#home'
       get '/privacy', to: 'pages#privacy'

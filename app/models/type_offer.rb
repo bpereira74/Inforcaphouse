@@ -1,12 +1,12 @@
 # == Schema Information
 #
-# Table name: type_properties
+# Table name: type_offers
 #
 #  id         :bigint           not null, primary key
 #  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-class TypeProperty < ApplicationRecord
+class TypeOffer < ApplicationRecord
       validates :name, presence: true, uniqueness: true
 end

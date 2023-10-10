@@ -24,4 +24,7 @@ class User < ApplicationRecord
          validates :name, presence: true
          validates :phone, presence: true
          enum role: [:regular, :admin]
+
+  # Relaciones
+         has_many :property_features, dependent: :destroy
 end

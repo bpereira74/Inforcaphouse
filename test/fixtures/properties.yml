@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: properties
+#
+#  id               :bigint           not null, primary key
+#  user_id          :bigint           not null
+#  type_offer_id    :bigint           not null
+#  type_property_id :bigint           not null
+#  area             :integer
+#  description      :text
+#  price            :decimal(, )
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
+one:
+  user: one
+  type_offer: one
+  type_property: one
+  area: 1
+  description: MyText
+  price: 9.99
+
+two:
+  user: two
+  type_offer: two
+  type_property: two
+  area: 1
+  description: MyText
+  price: 9.99
